@@ -18,7 +18,7 @@ services:
   wordpress:
     image: wordpress:latest
     volumes:
-      - wp_data:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
       - ./theme-w-react:/var/www/html/wp-content/themes/theme-w-react
     user: "${UID}:${GID}"
     ports:
@@ -31,4 +31,4 @@ services:
       - WORDPRESS_DB_NAME=wordpress
 volumes:
   db_data:
-  wp_data:
+
