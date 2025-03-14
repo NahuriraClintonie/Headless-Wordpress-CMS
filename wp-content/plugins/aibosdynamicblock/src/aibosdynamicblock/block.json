@@ -6,10 +6,18 @@
 	"title": "Aibosdynamicblock",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Display your site's copyright page.",
 	"example": {},
 	"supports": {
-		"interactivity": true
+		"interactivity": true,
+		"color": {
+        "background": false,
+        "text": true
+    },
+	"html": false,
+    "typography": {
+        "fontSize": true
+    }
 	},
 	"textdomain": "aibosdynamicblock",
 	"editorScript": "file:./index.js",
@@ -17,4 +25,5 @@
 	"style": "file:./style-index.css",
 	"render": "file:./render.php",
 	"viewScriptModule": "file:./view.js"
+	
 }
