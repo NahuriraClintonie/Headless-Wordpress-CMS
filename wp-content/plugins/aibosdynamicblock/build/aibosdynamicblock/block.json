@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "title": "Aibosdynamicblock",
   "category": "widgets",
-  "icon": "smiley",
+  "icon": "calendarIcon",
   "description": "Display your site's copyright page.",
   "example": {},
   "supports": {
