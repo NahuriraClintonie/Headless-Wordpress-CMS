@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+//import { __ } from '@wordpress/i18n';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -30,12 +30,8 @@ import './editor.scss';
  * @return {Element} Element to render.
  */
 export default function Edit() {
+	const currentYear = new Date().getFullYear().toString();
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Aibosdynamicblock – hello from the editor!',
-				'aibosdynamicblock'
-			) }
-		</p>
+		<p { ...useBlockProps() }>© { currentYear }</p>
 	);
 }
